@@ -33,7 +33,7 @@ function canvasApp() {
             ctx.fillStyle = '#595959';
             ctx.fillRect(0, 0, width, height);
             
-	        for (let i = 0; i < cols; i++) {
+	    for (let i = 0; i < cols; i++) {
                 for (let j = 0; j < rows; j++) {
                     let x = i * resolution;
                     let y = j * resolution;
@@ -67,8 +67,7 @@ function canvasApp() {
             generation++;
             gen.innerHTML = generation;
             
-            
-	        window.requestAnimationFrame(drawScreen);
+	    window.requestAnimationFrame(drawScreen);
         },1000/fps);
     }
 }
